@@ -11,13 +11,13 @@ exports.config = {
    *
    * @env NEW_RELIC_APP_NAME
    */
-  app_name: ['newrelic-k8s-guestbook'],
+  app_name: process.env.NEW_RELIC_APP_NAME,
   /**
    * The user's license key. Must be set by per-app configuration file.
    *
    * @env NEW_RELIC_LICENSE_KEY
    */
-  license_key: process.env.NEWRELIC_LICENSE_KEY,
+  license_key: process.env.NEW_RELIC_LICENSE_KEY,
   /**
    * Hostname for the New Relic collector proxy.
    *
