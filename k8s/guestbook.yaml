@@ -129,6 +129,8 @@ spec:
         env:
         - name: NEWRELIC_LICENSE_KEY
           value: <KEY-HERE>
+        - name: NEW_RELIC_APP_NAME
+          value: <APP-NAME-HERE>
           # tells the node.js app to pause at random intervals
         - name: LOOK_BUSY
           value: t
