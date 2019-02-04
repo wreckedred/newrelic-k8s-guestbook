@@ -23,7 +23,7 @@ var lookBusy = function() {
 var maybeError = function() {
   var throwError = Math.floor(Math.random() * 10) === 1;
   if (throwError) {
-    throw new Error('This is a synthetic error.');
+    throw new Error('Error 500--Internal Server Error');
   }
 }
 
@@ -65,7 +65,7 @@ app.get('/', function (req, res) {
     }
   }
 
-  res.render('index', { title: 'Guestbook', message: 'Send a string to redis.' });
+  res.render('index', { title: 'New Relic K8s Guestbook', message: 'Send a string to redis.' });
 });
 
 app.get('/message', function (req, res) {
