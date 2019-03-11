@@ -40,7 +40,7 @@ var CUSTOM_PARAMETERS = {
 };
 
 app.use(function(req, res, next) {
-  newrelic.addCustomParameters(CUSTOM_PARAMETERS);
+  newrelic.addCustomAttributes(CUSTOM_PARAMETERS);
   next();
 });
 
