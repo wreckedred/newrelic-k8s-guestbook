@@ -115,7 +115,7 @@ spec:
     spec:
       containers:
       - name: node-redis
-        image: docker.io/wreckedreddocker/newrelic-k8s-guestbook:0.0.3
+        image: docker.io/wreckedreddocker/newrelic-k8s-guestbook:0.0.4
         livenessProbe:
           httpGet:
             path: /healthz
